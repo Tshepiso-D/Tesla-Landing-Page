@@ -22,6 +22,7 @@ background-image: url(https://digitalassets.tesla.com/tesla-contents/image/uploa
 background-size:cover;
 background-repeat:no-repeat;
 background-position:center;
+background-attachment:fixed;
 height:100vh;
 width:100vw;
 }
@@ -42,6 +43,7 @@ p{
 
 .middle-menu {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
     
 }
 
@@ -69,6 +71,14 @@ main {
 .nav-item{
     padding: 5px 15px;
     cursor: pointer;
+    width:120px;
+    margin:2px;
+    border: 1px solid white;
+    background-color:lightgrey;
+    border-bottom-left-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
 }
 
 .nav-item:hover{
@@ -110,10 +120,58 @@ button{
 #mobile-menu{
     display:none;
 }
-@media screen and (max-width:970px){
+.m{
+    display:none;
+}
+
+@media screen and (max-width:1019px){
+    #mobile-menu{
+    margin: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    width:20%;
+    cursor:pointer;
+    }
     .middle-menu{display: none;}
     .right-menu{display:none;}
     #mobile-menu{
-        display: inline-block;
+        display:flex;
     }
+    .m{
+        transition-duration:2s;
+        display: flex;
+        position:fixed;
+        right:0vh;
+        top:-120vh;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        width:100%;
+        height:100%;
+        background-color: rgba(59, 109, 117, 0.9777);
+        margin:0px;
+        border-bottom-right-radius:40%;
+    }
+    .mobile-menu-div{
+        transition-duration:2s;
+        display:flex;
+        flex-direction:column;
+        width:100%;
+        height:100%;
+        background-color:rgba(59, 109, 117, 0.9777); 
+        justify-content:center;
+        align-items:center;
+        position:fixed;
+        top:0vh;
+        right:0vh;
+    }
+}
+
+footer{
+    display:flex;
+    justify-content:center;
+}
+footer span{
+    margin:5px;
+    color:grey;
 }
