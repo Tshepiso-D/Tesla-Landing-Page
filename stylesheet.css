@@ -33,6 +33,18 @@ nav {
     align-items: center;
     height: 56px;
     padding: 32px;
+    background-color:white;
+    margin-bottom:30px;
+}
+
+.icons{
+    width:20px;
+    margin:5px;
+    font-size:20px;
+}
+
+.icons:hover{
+    cursor:pointer;
 }
 
 p{
@@ -56,12 +68,15 @@ main {
     height: calc(100vh - 56px);
     display:flex;
     flex-direction: column;
-    justify-content: space-between;
     
 }
 
 .title-menu {
     height: calc(164px - 56px);
+    color:white;
+}
+h1{
+    color:white;
 }
 .logo {
     height: 24px;
@@ -74,7 +89,7 @@ main {
     width:120px;
     margin:2px;
     border: 1px solid white;
-    background-color:lightgrey;
+    background-color:white;
     border-bottom-left-radius: 9999px;
     border-bottom-right-radius: 9999px;
     border-top-left-radius: 9999px;
@@ -82,7 +97,7 @@ main {
 }
 
 .nav-item:hover{
-    background-color: aliceblue;
+    background-color: grey;
     border-bottom-left-radius: 9999px;
     border-bottom-right-radius: 9999px;
     border-top-left-radius: 9999px;
@@ -90,31 +105,30 @@ main {
 }
 
 .actions-area{
-    margin-bottom: 100px;
+    margin-bottom:50px;
 }
 
 button{
     border: none;
     background: none;
-    background-color: yellow;
-    width: 264px;
+    background-color: white;
+    width: 200px;
     height: 40px;
     padding: 7px 27px;
-    border-bottom-left-radius: 9999px;
-    border-bottom-right-radius: 9999px;
-    border-top-left-radius: 9999px;
-    border-top-right-radius: 9999px;
+    border-radius:5px;
     margin-right: 15px;
     cursor: pointer;
+
 }
 
+
 .btn-dark{
-    background-color:#191d21;
+    background-color:#3e6ae1;
     color: white;
 }
 
 .btn-light{
-    background-color:#e4e4e2;
+    background-color:white;
     color: #191d21;
 }
 #mobile-menu{
@@ -170,6 +184,7 @@ button{
 footer{
     display:flex;
     justify-content:center;
+    padding:20px;
 }
 footer span{
     margin:5px;
