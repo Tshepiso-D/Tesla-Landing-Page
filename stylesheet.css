@@ -7,6 +7,9 @@ h1 {
     font-weight: 500;
 } 
 
+body{
+    background-color:white;
+}
 *{
     margin:0;
     padding:0;
@@ -18,11 +21,9 @@ h1 {
 }
 
 .banner-wrap{
-background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Model-S-homepage-desktop);
 background-size:cover;
 background-repeat:no-repeat;
 background-position:center;
-background-attachment:fixed;
 height:100vh;
 width:100vw;
 }
@@ -35,6 +36,9 @@ nav {
     padding: 32px;
     background-color:white;
     margin-bottom:30px;
+    position:fixed;
+    width:100%;
+    top:0;
 }
 
 .icons{
@@ -55,8 +59,6 @@ p{
 
 .middle-menu {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
-    
 }
 
 .right-menu {
@@ -64,10 +66,15 @@ p{
 }
 
 main {
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Model-S-homepage-desktop);
+    background-size:cover;
+    background-position:center;
     text-align: center;
-    height: calc(100vh - 56px);
+    height: calc(70vh);
     display:flex;
     flex-direction: column;
+    margin-top:75px;
+    border-bottom:5px solid white;
     
 }
 
@@ -104,6 +111,55 @@ h1{
     border-top-right-radius: 9999px;
 }
 
+.models{
+    display:flex;
+    flex-direction:row;
+    height:350px;
+    max-width:100vw;
+    align-items:center;
+    overflow-x:scroll;
+    flex-wrap: nowrap;
+    
+}
+.model{
+    color:white;
+    flex:none;
+    padding: 5px 15px;
+    cursor: pointer;
+    margin:10px;
+    height:300px;
+    width:40vw;
+    border: 1px solid grey;
+    background-color:white;
+    border-radius: 3px;
+}
+
+.modelbtn button{
+    width:150px;
+}
+.s{
+    background-image:url(Model\ S.avif);
+    background-size:cover;
+    background-position:center;
+}
+
+.three{
+    background-image:url(Model3.avif);
+    background-size:cover;
+    background-position:center;
+}
+
+.Y{
+    background-image:url(Model\ Y.avif);
+    background-size:cover;
+    background-position:center;
+}
+
+.X{
+    background-image:url(Model\ X.avif);
+    background-size:cover;
+    background-position:center;
+}
 .actions-area{
     margin-bottom:50px;
 }
@@ -185,6 +241,7 @@ footer{
     display:flex;
     justify-content:center;
     padding:20px;
+    background-color:white;
 }
 footer span{
     margin:5px;
