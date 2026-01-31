@@ -114,7 +114,7 @@ h1{
 .models{
     display:flex;
     flex-direction:row;
-    height:350px;
+    height:600px;
     max-width:100vw;
     align-items:center;
     overflow-x:scroll;
@@ -127,8 +127,8 @@ h1{
     padding: 5px 15px;
     cursor: pointer;
     margin:10px;
-    height:300px;
-    width:40vw;
+    height:550px;
+    width:60vw;
     border: 1px solid white;
     background-color:white;
     border-radius: 3px;
